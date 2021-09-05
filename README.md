@@ -10,6 +10,17 @@ If you have it, run `make repl`.
 
 Otherwise, just `go build ./cmd/repl` and run that directly.
 
+Either way you should see a REPL pop up. Test it out with:
+
+```go
+> a := foo.Capability.DoSomething()
+> b := bar.Capability.DoSomething()
+> a == b
+> 1 + 1
+```
+
+As you can see, `foo` `bar`s `Capability` struct is instantiated and automatically imported by the REPL.
+
 ## Why?
 
 I like REPLs. I like Go. Why not both?
